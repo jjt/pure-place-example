@@ -1,0 +1,632 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Pure Place Test</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+  </head>
+  <body>
+    
+    <div class="container">
+      <div class="main">
+        <h1>Grid (2/3)</h1>
+      </div>
+      <div class="sidebar">
+        <h1>Grid (1/3)</h1>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="section">
+        <h1>Forms</h1>
+
+        <h2 class="content-subhead">Default Form</h2>
+        <form class="place-form">
+          <fieldset>
+            <legend>A compact inline form</legend>
+
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+
+            <label for="default-remember">
+              <input id="default-remember" type="checkbox"> Remember me
+            </label>
+
+            <button type="submit" class="place-button place-button-primary">Sign in</button>
+          </fieldset>
+        </form>
+
+        <h2>Stacked Form</h2>
+        <form class="place-form place-form-stacked">
+          <fieldset>
+            <legend>A Stacked Form</legend>
+
+            <label for="stacked-email">Email</label>
+            <input id="stacked-email" type="email" placeholder="Email">
+
+            <label for="stacked-password">Password</label>
+            <input id="stacked-password" type="password" placeholder="Password">
+
+            <label for="stacked-state">State</label>
+            <select id="stacked-state">
+              <option>AL</option>
+              <option>CA</option>
+              <option>IL</option>
+            </select>
+
+            <label for="stacked-remember" class="place-checkbox">
+              <input id="stacked-remember" type="checkbox"> Remember me
+            </label>
+
+            <button type="submit" class="place-button place-button-primary">Sign in</button>
+          </fieldset>
+        </form>
+        <h2>Aligned Form</h2>
+        <form class="place-form place-form-aligned">
+          <fieldset>
+            <div class="place-control-group">
+              <label for="aligned-name">Username</label>
+              <input id="aligned-name" type="text" placeholder="Username">
+            </div>
+
+            <div class="place-control-group">
+              <label for="aligned-password">Password</label>
+              <input id="aligned-password" type="password" placeholder="Password">
+            </div>
+
+            <div class="place-control-group">
+              <label for="aligned-email">Email Address</label>
+              <input id="aligned-email" type="email" placeholder="Email Address">
+            </div>
+
+            <div class="place-control-group">
+              <label for="aligned-foo">Supercalifragilistic Label</label>
+              <input id="aligned-foo" type="text" placeholder="Enter something here...">
+            </div>
+
+            <div class="place-controls">
+              <label for="aligned-cb" class="place-checkbox">
+                <input id="aligned-cb" type="checkbox"> I've read the terms and conditions
+              </label>
+
+              <button type="submit" class="place-button place-button-primary">Submit</button>
+            </div>
+          </fieldset>
+        </form>
+
+        <h2>Multi-Column Form (with Pure Grids)</h2>
+        <form class="place-form place-form-stacked">
+          <fieldset>
+            <legend>Legend</legend>
+
+            <div class="place-g-r">
+              <div class="place-u-1-3">
+                <label for="multi-first-name">First Name</label>
+                <input id="multi-first-name" type="text">
+              </div>
+
+              <div class="place-u-1-3">
+                <label for="multi-last-name">Last Name</label>
+                <input id="multi-last-name" type="text">
+              </div>
+
+              <div class="place-u-1-3">
+                <label for="multi-email">E-Mail</label>
+                <input id="multi-email" type="email" required>
+              </div>
+
+              <div class="place-u-1-3">
+                <label for="multi-city">City</label>
+                <input id="multi-city" type="text">
+              </div>
+
+              <div class="place-u-1-3">
+                <label for="multi-state">State</label>
+                <select id="multi-state" class="place-input-medium">
+                  <option>AL</option>
+                  <option>CA</option>
+                  <option>IL</option>
+                </select>
+              </div>
+            </div>
+
+            <label for="multi-terms" class="place-checkbox">
+              <input id="multi-terms" type="checkbox"> I've read the terms and conditions
+            </label>
+
+            <button type="submit" class="place-button place-button-primary">Submit</button>
+          </fieldset>
+        </form>
+
+        <h2>Grouped Inputs</h2>
+        <form class="place-form">
+          <fieldset class="place-group">
+            <input type="text" class="place-input-1-2" placeholder="Username">
+            <input type="text" class="place-input-1-2" placeholder="Password">
+            <input type="email" class="place-input-1-2" placeholder="Email">
+          </fieldset>
+
+          <fieldset class="place-group">
+            <input type="text" class="place-input-1-2" placeholder="Another Group">
+            <input type="text" class="place-input-1-2" placeholder="More Stuff">
+          </fieldset>
+
+          <button type="submit" class="place-button place-input-1-2 place-button-primary">Sign in</button>
+        </form>
+
+
+        <h2>Input Sizing</h2>
+        <form class="place-form">
+          <input class="place-input-1" type="text" placeholder=".place-input-1"><br>
+          <input class="place-input-2-3" type="text" placeholder=".place-input-2-3"><br>
+          <input class="place-input-1-2" type="text" placeholder=".place-input-1-2"><br>
+          <input class="place-input-1-3" type="text" placeholder=".place-input-1-3"><br>
+          <input class="place-input-1-4" type="text" placeholder=".place-input-1-4"><br>
+        </form>
+
+        <h2>Input Sizing 2</h2>
+        <form class="place-form place-g-r">
+          <div class="place-u-1-4">
+            <input class="place-input-1" type="text" placeholder=".place-u-1-4">
+          </div>
+          <div class="place-u-3-4">
+            <input class="place-input-1" type="text" placeholder=".place-u-3-4">
+          </div>
+
+          <div class="place-u-1-2">
+            <input class="place-input-1" type="text" placeholder=".place-u-1-2">
+          </div>
+          <div class="place-u-1-2">
+            <input class="place-input-1" type="text" placeholder=".place-u-1-2">
+          </div>
+
+          <div class="place-u-1-8">
+            <input class="place-input-1" type="text" placeholder=".place-u-1-8">
+          </div>
+          <div class="place-u-1-8">
+            <input class="place-input-1" type="text" placeholder=".place-u-1-8">
+          </div>
+          <div class="place-u-1-4">
+            <input class="place-input-1" type="text" placeholder=".place-u-1-4">
+          </div>
+          <div class="place-u-1-2">
+            <input class="place-input-1" type="text" placeholder=".place-u-1-2">
+          </div>
+
+          <div class="place-u-1-5">
+            <input class="place-input-1" type="text" placeholder=".place-u-1-5">
+          </div>
+          <div class="place-u-2-5">
+            <input class="place-input-1" type="text" placeholder=".place-u-2-5">
+          </div>
+          <div class="place-u-2-5">
+            <input class="place-input-1" type="text" placeholder=".place-u-2-5">
+          </div>
+
+          <div class="place-u-1">
+            <input class="place-input-1" type="text" placeholder=".place-u-1">
+          </div>
+        </form>
+
+        <h2>Checkboxes and Radios</h2>
+        <form class="place-form">
+          <label for="checkbox-radio-option-one" class="place-checkbox">
+            <input id="checkbox-radio-option-one" type="checkbox" value="">
+            Here's option one.
+          </label>
+
+          <label for="checkbox-radio-option-two" class="place-radio">
+            <input id="checkbox-radio-option-two" type="radio" name="optionsRadios" value="option1" checked>
+            Here's a radio button. You can choose this one..
+          </label>
+
+          <label for="checkbox-radio-option-three" class="place-radio">
+            <input id="checkbox-radio-option-three" type="radio" name="optionsRadios" value="option2">
+            ..Or this one!
+          </label>
+        </form>
+
+
+      </div>
+    </div>
+
+
+    <div class="container">
+     <div class="section">
+       <h1>Buttons</h1>
+       <h2 class="content-subhead">Default Buttons</h2>
+    <p>
+        To create a Pure Button, add the <code>place-button</code> classname to any <code>&lt;a&gt;</code> or <code>&lt;button&gt;</code> element.
+    </p>
+
+
+    <a class="place-button" href="#">A Pure Button</a>
+<button class="place-button">A Pure Button</button>
+
+
+
+
+
+    <h2 class="content-subhead">Disabled Buttons</h2>
+    <p>
+        To mark a button as disabled, add the <code>place-button-disabled</code> classname alongside <code>place-button</code>.
+    </p>
+
+
+    <a class="place-button place-button-disabled" href="#">A Disabled Button</a>
+<button class="place-button place-button-disabled">A Disabled Button</button>
+
+
+
+
+    <h2 class="content-subhead">Active Buttons</h2>
+    <p>
+        To style a button so that it appears "pressed", add the <code>place-button-active</code> classname alongside <code>place-button</code>.
+    </p>
+
+
+    <a class="place-button place-button-active" href="#">An Active Button</a>
+<button class="place-button place-button-active">An Active Button</button>
+
+
+
+
+
+    <h2 class="content-subhead">Primary Buttons</h2>
+    <p>
+    To indicate that a button represents a primary action, add the <code>place-button-primary</code> classname alongside <code>place-button</code>.
+    </p>
+
+
+    <a class="place-button place-button-primary" href="#">A Primary Button</a>
+    <button class="place-button place-button-primary">A Primary Button</button>  
+  </div>
+</div>
+
+
+
+<div class="container">
+  <div class="section">
+    <h1>Tables</h1>
+    <h2 class="content-subhead">Default Table</h2>
+    <p>
+    To style an HTML table, add the <code>place-table</code> classname. This class adds padding and borders to table elements, and emphasizes the header.
+    </p>
+
+
+          <table class="place-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Make</th>
+                <th>Model</th>
+                <th>Year</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Honda</td>
+                <td>Accord</td>
+                <td>2009</td>
+              </tr>
+
+              <tr>
+                <td>2</td>
+                <td>Toyota</td>
+                <td>Camry</td>
+                <td>2012</td>
+              </tr>
+
+              <tr>
+                <td>3</td>
+                <td>Hyundai</td>
+                <td>Elantra</td>
+                <td>2010</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+
+          <h2 class="content-subhead">Bordered Table</h2>
+          <p>
+          To add horizontal and vertical borders to all cells, add the <code>place-table-bordered</code> classname to the <code>&lt;table&gt;</code> element.
+          </p>
+
+          <table class="place-table place-table-bordered">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Make</th>
+                <th>Model</th>
+                <th>Year</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Honda</td>
+                <td>Accord</td>
+                <td>2009</td>
+              </tr>
+
+              <tr>
+                <td>2</td>
+                <td>Toyota</td>
+                <td>Camry</td>
+                <td>2012</td>
+              </tr>
+
+              <tr>
+                <td>3</td>
+                <td>Hyundai</td>
+                <td>Elantra</td>
+                <td>2010</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+
+
+          <h2 class="content-subhead">Table with Horizontal Borders</h2>
+          <p>
+          If you prefer horizontal lines only, add the <code>place-table-horizontal</code> classname to the <code>&lt;table&gt;</code> element.
+          </p>
+
+          <table class="place-table place-table-horizontal">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Make</th>
+                <th>Model</th>
+                <th>Year</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Honda</td>
+                <td>Accord</td>
+                <td>2009</td>
+              </tr>
+
+              <tr>
+                <td>2</td>
+                <td>Toyota</td>
+                <td>Camry</td>
+                <td>2012</td>
+              </tr>
+
+              <tr>
+                <td>3</td>
+                <td>Hyundai</td>
+                <td>Elantra</td>
+                <td>2010</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+
+
+          <h2 class="content-subhead">Striped Table</h2>
+          <p>
+          Large tables are easier to parse visually if rows are easily distinguishable. Adding the <code>place-table-odd</code> class name to every other <code>&lt;tr&gt;</code> element changes the background of the row and creates a zebra-styled effect.
+          </p>
+
+          <table class="place-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Make</th>
+                <th>Model</th>
+                <th>Year</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr class="place-table-odd">
+                <td>1</td>
+                <td>Honda</td>
+                <td>Accord</td>
+                <td>2009</td>
+              </tr>
+
+              <tr>
+                <td>2</td>
+                <td>Toyota</td>
+                <td>Camry</td>
+                <td>2012</td>
+              </tr>
+
+              <tr class="place-table-odd">
+                <td>3</td>
+                <td>Hyundai</td>
+                <td>Elantra</td>
+                <td>2010</td>
+              </tr>
+
+              <tr>
+                <td>4</td>
+                <td>Ford</td>
+                <td>Focus</td>
+                <td>2008</td>
+              </tr>
+
+              <tr class="place-table-odd">
+                <td>5</td>
+                <td>Nissan</td>
+                <td>Sentra</td>
+                <td>2011</td>
+              </tr>
+
+              <tr>
+                <td>6</td>
+                <td>BMW</td>
+                <td>M3</td>
+                <td>2009</td>
+              </tr>
+
+              <tr class="place-table-odd">
+                <td>7</td>
+                <td>Honda</td>
+                <td>Civic</td>
+                <td>2010</td>
+              </tr>
+
+              <tr>
+                <td>8</td>
+                <td>Kia</td>
+                <td>Soul</td>
+                <td>2010</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="section">
+          <h1>Menus</h1>
+          <h2 class="content-subhead">Horizontal Menu</h2>
+          <p>
+          To create a horizontal menu, add the <code>place-menu-horizontal</code> class name. You can mark the active list element by adding the <code>place-menu-selected</code> class to the list element.
+          </p>
+
+          <div class="place-menu place-menu-open place-menu-horizontal">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li class="place-menu-selected"><a href="#">Flickr</a></li>
+              <li><a href="#">Messenger</a></li>
+              <li><a href="#">Sports</a></li>
+              <li><a href="#">Finance</a></li>
+            </ul>
+          </div>
+
+
+
+
+          <h2 class="content-subhead">Menu with Headings</h2>
+          <p>
+          To add headings to your menu, place some content outside the <code>&lt;ul&gt;</code> element and wrap it in an <code>&lt;a&gt;</code> element with the <code>place-menu-heading</code> class name.
+          </p>
+
+          <div class="place-menu place-menu-open place-menu-horizontal">
+            <a href="#" class="place-menu-heading">Site Title</a>
+
+            <ul>
+              <li class="place-menu-selected"><a href="#">Home</a></li>
+              <li><a href="#">Flickr</a></li>
+              <li><a href="#">Messenger</a></li>
+              <li><a href="#">Sports</a></li>
+              <li><a href="#">Finance</a></li>
+            </ul>
+          </div>
+
+
+
+
+          <h2 class="content-subhead">Vertical Menu</h2>
+          <p>
+          Menus are vertical by default. You need only add the <code>place-menu</code> class to style the menu, and the <code>place-menu-open</code> class to ensure that it is visible.
+          </p>
+
+          <div class="place-menu place-menu-open">
+            <a class="place-menu-heading">Yahoo! Sites</a>
+
+            <ul>
+              <li><a href="#">Flickr</a></li>
+              <li><a href="#">Messenger</a></li>
+              <li><a href="#">Sports</a></li>
+              <li><a href="#">Finance</a></li>
+              <li class="place-menu-heading">More Sites!</li>
+              <li><a href="#">Games</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">OMG!</a></li>
+            </ul>
+          </div>
+
+
+
+
+          <h2 class="content-subhead">Add Dropdowns to Menus</h2>
+          <p>
+          Adding dropdowns to menus requires the use of JavaScript. For example, YUI's <code>Y.Menu</code> module adds dropdown functionality and the ability to create JavaScript menus.
+          </p>
+
+          <div class="place-menu place-menu-horizontal place-menu-open" id="horizontal-menu">
+            <ul id="std-menu-items">
+              <li class="place-menu-selected"><a href="#">Flickr</a></li>
+              <li><a href="#">Messenger</a></li>
+              <li><a href="#">Sports</a></li>
+              <li><a href="#">Finance</a></li>
+              <li>
+              <a href="#">Other</a>
+              <ul>
+                <li class="place-menu-heading">More from Yahoo!</li>
+                <li class="place-menu-separator"></li>
+                <li><a href="#">Autos</a></li>
+                <li><a href="#">Flickr</a></li>
+                <li><a href="#">Answers</a></li>
+                <li>
+                <a href="#">Even More</a>
+                <ul>
+                  <li><a href="#">Horoscopes</a></li>
+                  <li><a href="#">Games</a></li>
+                  <li><a href="#">Jobs</a></li>
+                  <li><a href="#">OMG</a></li>
+                </ul>
+                </li>
+              </ul>
+              </li>
+            </ul>
+          </div>
+
+
+
+
+          <h2 class="content-subhead">Menus with Disabled Items</h2>
+          <p>
+          To mark a link as disabled, add an <code>&lt;a&gt;</code> element with the <code>place-menu-disabled</code> class name. Disabled items appear faded and do not inherit hover styles.
+          </p>
+
+          <div class="place-menu place-menu-open place-menu-horizontal">
+            <a href="#" class="place-menu-heading">Site Title</a>
+
+            <ul>
+              <li class="place-menu-selected"><a href="#">Home</a></li>
+              <li><a href="#">Flickr</a></li>
+              <li class="place-menu-disabled"><a href="#">Disabled Item</a></li>
+            </ul>
+          </div>
+
+
+
+
+          <h2 class="content-subhead">Paginators</h2>
+          <p>
+          To create a paginator control, add the <code>place-paginator</code> classname to a <code>&lt;ul&gt;</code> element. For paginator controls that look like buttons, add the <code>place-button</code> class name. For a plainer paginator, you can omit this class.
+          </p>
+
+          <ul class="place-paginator">
+            <li><a class="place-button prev" href="#">&#171;</a></li>
+            <li><a class="place-button" href="#">1</a></li>
+            <li><a class="place-button place-button-active" href="#">2</a></li>
+            <li><a class="place-button" href="#">3</a></li>
+            <li><a class="place-button" href="#">4</a></li>
+            <li><a class="place-button" href="#">5</a></li>
+            <li><a class="place-button next" href="#">&#187;</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </body>
+  </html>
