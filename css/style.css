@@ -1,17 +1,14 @@
 /* Buttons*/
 /* Forms*/
 /* Grids*/
-/* line 2, ../scss/pure/grids/_grids-core.scss */
 .opera-only :-o-prefocus {
   word-spacing: -.43em;
 }
 
-/* line 2, ../scss/pure/grids/_grids-r.scss */
 .opera-only :-o-prefocus {
   word-spacing: -.43em;
 }
 
-/* line 1, ../scss/pure/grids/_grids-units.scss */
 .section-u-1, .section, .section-u-1-2, .section-u-1-3, .sidebar, .section-u-2-3, .main, .section-u-1-4, .section-u-3-4, .section-u-1-5, .section-u-2-5, .section-u-3-5, .section-u-4-5, .section-u-1-6, .section-u-5-6, .section-u-1-8, .section-u-3-8, .section-u-5-8, .section-u-7-8, .section-u-1-12, .section-u-5-12, .section-u-7-12, .section-u-11-12, .section-u-1-24, .section-u-5-24, .section-u-7-24, .section-u-11-24, .section-u-13-24, .section-u-17-24, .section-u-19-24, .section-u-23-24 {
   display: inline-block;
   *display: inline;
@@ -22,149 +19,120 @@
   text-rendering: auto;
 }
 
-/* line 2, ../scss/pure/grids/_grids-units.scss */
 .section-u-1, .section {
   display: block;
 }
 
-/* line 3, ../scss/pure/grids/_grids-units.scss */
 .section-u-1-2 {
   width: 50%;
 }
 
-/* line 4, ../scss/pure/grids/_grids-units.scss */
 .section-u-1-3, .sidebar {
   width: 33.33333%;
 }
 
-/* line 5, ../scss/pure/grids/_grids-units.scss */
 .section-u-2-3, .main {
   width: 66.66666%;
 }
 
-/* line 6, ../scss/pure/grids/_grids-units.scss */
 .section-u-1-4 {
   width: 25%;
 }
 
-/* line 7, ../scss/pure/grids/_grids-units.scss */
 .section-u-3-4 {
   width: 75%;
 }
 
-/* line 8, ../scss/pure/grids/_grids-units.scss */
 .section-u-1-5 {
   width: 20%;
 }
 
-/* line 9, ../scss/pure/grids/_grids-units.scss */
 .section-u-2-5 {
   width: 40%;
 }
 
-/* line 10, ../scss/pure/grids/_grids-units.scss */
 .section-u-3-5 {
   width: 60%;
 }
 
-/* line 11, ../scss/pure/grids/_grids-units.scss */
 .section-u-4-5 {
   width: 80%;
 }
 
-/* line 12, ../scss/pure/grids/_grids-units.scss */
 .section-u-1-6 {
   width: 16.656%;
 }
 
-/* line 13, ../scss/pure/grids/_grids-units.scss */
 .section-u-5-6 {
   width: 83.33%;
 }
 
-/* line 14, ../scss/pure/grids/_grids-units.scss */
 .section-u-1-8 {
   width: 12.5%;
 }
 
-/* line 15, ../scss/pure/grids/_grids-units.scss */
 .section-u-3-8 {
   width: 37.5%;
 }
 
-/* line 16, ../scss/pure/grids/_grids-units.scss */
 .section-u-5-8 {
   width: 62.5%;
 }
 
-/* line 17, ../scss/pure/grids/_grids-units.scss */
 .section-u-7-8 {
   width: 87.5%;
 }
 
-/* line 18, ../scss/pure/grids/_grids-units.scss */
 .section-u-1-12 {
   width: 8.3333%;
 }
 
-/* line 19, ../scss/pure/grids/_grids-units.scss */
 .section-u-5-12 {
   width: 41.6666%;
 }
 
-/* line 20, ../scss/pure/grids/_grids-units.scss */
 .section-u-7-12 {
   width: 58.3333%;
 }
 
-/* line 21, ../scss/pure/grids/_grids-units.scss */
 .section-u-11-12 {
   width: 91.6666%;
 }
 
-/* line 22, ../scss/pure/grids/_grids-units.scss */
 .section-u-1-24 {
   width: 4.1666%;
 }
 
-/* line 23, ../scss/pure/grids/_grids-units.scss */
 .section-u-5-24 {
   width: 20.8333%;
 }
 
-/* line 24, ../scss/pure/grids/_grids-units.scss */
 .section-u-7-24 {
   width: 29.1666%;
 }
 
-/* line 25, ../scss/pure/grids/_grids-units.scss */
 .section-u-11-24 {
   width: 45.8333%;
 }
 
-/* line 26, ../scss/pure/grids/_grids-units.scss */
 .section-u-13-24 {
   width: 54.1666%;
 }
 
-/* line 27, ../scss/pure/grids/_grids-units.scss */
 .section-u-17-24 {
   width: 70.8333%;
 }
 
-/* line 28, ../scss/pure/grids/_grids-units.scss */
 .section-u-19-24 {
   width: 79.1666%;
 }
 
-/* line 29, ../scss/pure/grids/_grids-units.scss */
 .section-u-23-24 {
   width: 95.8333%;
 }
 
 /* Menus*/
 /* Tables*/
-/* line 1, ../scss/pure/tables/_tables.scss */
 .my-table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -172,7 +140,6 @@
   border: 1px solid #cbcbcb;
 }
 
-/* line 2, ../scss/pure/tables/_tables.scss */
 .my-table caption {
   color: #000;
   font: italic 85%/1 arial,sans-serif;
@@ -180,7 +147,6 @@
   text-align: center;
 }
 
-/* line 3, ../scss/pure/tables/_tables.scss */
 .my-table td, .my-table th {
   border-left: 1px solid #cbcbcb;
   border-width: 0 0 0 1px;
@@ -190,12 +156,10 @@
   padding: 6px 12px;
 }
 
-/* line 4, ../scss/pure/tables/_tables.scss */
 .my-table td:first-child, .my-table th:first-child {
   border-left-width: 0;
 }
 
-/* line 5, ../scss/pure/tables/_tables.scss */
 .my-table thead {
   background: #e0e0e0;
   color: #000;
@@ -204,46 +168,38 @@
   white-space: nowrap;
 }
 
-/* line 6, ../scss/pure/tables/_tables.scss */
 .my-table td {
   background-color: transparent;
 }
 
-/* line 7, ../scss/pure/tables/_tables.scss */
 .my-table tbody tr:nth-child(2n) td {
   background-color: #f2f2f2;
 }
 
-/* line 9, ../scss/pure/tables/_tables.scss */
 .my-table td {
   border-bottom: 1px solid #cbcbcb;
 }
 
-/* line 10, ../scss/pure/tables/_tables.scss */
 .my-table tbody > tr:last-child td {
   border-bottom-width: 0;
 }
 
 @media (max-width: 480px) {
-  /* line 9, ../scss/pure/_functions.scss */
   .container > .section,
   .container > [class*="section-"] {
     width: 100%;
   }
 }
 @media (max-width: 767px) {
-  /* line 9, ../scss/pure/_functions.scss */
   .container > .section,
   .container > [class*="section-"] {
     width: 100%;
   }
 }
-/* line 9, ../scss/style.scss */
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
-/* line 13, ../scss/style.scss */
 h1, h2, h3, h4 {
   font-weight: normal;
   color: #999;
