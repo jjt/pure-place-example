@@ -1,0 +1,7 @@
+{
+  "name": "pure-place-test",
+  "version": "0.0.0",
+  "dependencies": {
+    "pure-place": "git@github.com:jjt/pure-place.git#~0.2.0"
+  }
+}
