@@ -1,10 +1,16 @@
-@import "pure/pure";
-@import "pure/functions";
+// Pure classes as placeholders for minimalists 
+@import "pure-place/scss/pure-placeholders";
 
-$pure-g-r-prefixes: container;
-$pure-u-r-prefixes: section;
-@include set-pure-r-prefixes;
-@include set-pure-u-prefixes;
+// This outputs the css for the grid system so you can use .pure-g/u/r
+// classes in your HTML rather than only extending %pure-g/u/r on selectors
+// If you're only importing the placeholders, this is recommended
+// Set $pure-grid-u-prefixes and $pure-grid-g-prefixes for .custom-g/u/r 
+@import "pure-place/scss/grid-classes";
+
+// This is the same output as the base Pure library, but with the option to 
+// change the class prefix of "pure" by setting $pure-classes-prefix
+//
+// @import "pure-place/scss/pure-classes";
 
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -16,12 +22,13 @@ h1,h2,h3,h4 {
 }
 
 
-
-// This is a standard use of Pure Place
+// This is a standard use of Pure placeholders
 .container {
+  @extend %pure-g; 
 }
 
 .another-container {
+  @extend %pure-g;
 }
 
 .section {
@@ -36,133 +43,10 @@ h1,h2,h3,h4 {
   @extend %pure-u-1-3;
 }
 
-
 .my-table {
   @extend %pure-table;
   @extend %pure-table-bordered;
   tbody tr:nth-child(2n) {
     @extend %pure-table-odd;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// This is just for testing - it takes the list and makes selectors like
-//   .place-_____ {
-//     @extend %pure-_____ !optional;
-//   }
-
-/*
-$extend-selectors: 
-  // Grid
-  g
-  g-r
-  u
-  u-1
-  u-1-2
-  u-1-3
-  u-2-3
-  u-1-4
-  u-3-4
-  u-1-5
-  u-2-5
-  u-3-5
-  u-4-5
-  u-1-6
-  u-5-6
-  u-1-8
-  u-3-8
-  u-5-8
-  u-7-8
-  u-1-12
-  u-5-12
-  u-7-12
-  u-11-12
-  u-1-24
-  u-5-24
-  u-7-24
-  u-11-24
-  u-13-24
-  u-17-24
-  u-19-24
-  u-23-24
-  // Forms
-  input-1
-  input-1-2
-  input-1-3
-  input-2-3
-  input-1-4
-  input-3-4
-  input-1-5
-  input-2-5
-  input-3-5
-  input-4-5
-  input-1-6
-  input-5-6
-  input-1-8
-  input-3-8
-  input-5-8
-  input-7-8
-  input-1-12
-  input-5-12
-  input-7-12
-  input-11-12
-  input-1-24
-  input-5-24
-  input-7-24
-  input-11-24
-  input-13-24
-  input-17-24
-  input-19-24
-  input-23-24
-  form
-  form-aligned
-  form-stacked
-  group
-  control-group
-  controls
-  checkbox
-  radio
-
-  // Buttons
-  button
-  button-disabled
-  button-active
-  button-primary
-
-  // Tables
-  table
-  table-bordered
-  table-horizontal
-  table-odd
-
-  // Menus
-  menu
-  menu-open
-  menu-horizontal
-  menu-heading
-  menu-selected
-  menu-disabled
-  paginator
-  ;
-*/
-$extend-selectors: null !default;
-@if $extend-selectors != null {
-  @each $selector in $extend-selectors {
-    .place-#{$selector} {
-      @extend %pure-#{$selector} !optional;
-    }
   }
 }
