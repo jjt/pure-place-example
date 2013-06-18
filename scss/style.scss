@@ -1,17 +1,31 @@
 // Pure classes as placeholders for minimalists 
-@import "pure-place/scss/pure-placeholders";
+//@import "pure-place-local/scss/pure-placeholders";
+@import "pure-place-local/scss/placeholders/base";
+@import "pure-place-local/scss/placeholders/buttons";
+@import "pure-place-local/scss/placeholders/forms";
+@import "pure-place-local/scss/placeholders/grids";
+@import "pure-place-local/scss/placeholders/menus";
+@import "pure-place-local/scss/placeholders/tables";
+
 
 // This outputs the css for the grid system so you can use .pure-g/u/r
 // classes in your HTML rather than only extending %pure-g/u/r on selectors
 // If you're only importing the placeholders, this is recommended
 // Set $pure-grid-u-prefixes and $pure-grid-g-prefixes for .custom-g/u/r 
-@import "pure-place/scss/grid-classes";
+$pure-grid-divisor: 12;
+$pure-grid-g-prefixes: place, container;
+$pure-grid-u-classes: section, main, sidebar;
+@import "pure-place-local/scss/grid-classes";
+
 
 // This is the same output as the base Pure library, but with the option to 
 // change the class prefix of "pure" by setting $pure-classes-prefix
 //
-// @import "pure-place/scss/pure-classes";
+//$pure-classes-prefix: place;
+//@import "pure-place/scss/pure-classes";
 
+
+// Just some style
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
@@ -25,6 +39,8 @@ h1,h2,h3,h4 {
 // This is a standard use of Pure placeholders
 .container {
   @extend %pure-g; 
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .another-container {
@@ -32,6 +48,7 @@ h1,h2,h3,h4 {
 }
 
 .section {
+  @extend %pure-u;
   @extend %pure-u-1;
 }
 
